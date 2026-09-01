@@ -1,0 +1,15 @@
+title: Potential Brute Force Attack
+id: DET-AUTH-001
+severity: MEDIUM
+mitre:
+  tactic: Credential Access
+  technique: T1110
+type: threshold
+condition:
+  event_type: authentication
+  field: details.raw_action
+  pattern: "failed"
+threshold_config:
+  count: 5
+  time_window: 300
+  by_field: src_ip
