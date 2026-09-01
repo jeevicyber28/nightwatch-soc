@@ -1,0 +1,305 @@
+[
+    {
+        "rule_id": "DET-AUTH-001",
+        "title": "CONFIRMED Brute Force Attack",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Credential Access",
+            "technique": "T1110"
+        },
+        "type": "threshold",
+        "event": {
+            "event_type": "authentication",
+            "outcome": "failure",
+            "user": "root",
+            "src_ip": "10.0.0.666",
+            "timestamp": "Jan 15 12:38:25",
+            "details": {
+                "raw_action": "failed"
+            }
+        },
+        "correlation_notes": "5+ failed logins from 10.0.0.666 in 5 minutes"
+    },
+    {
+        "rule_id": "DET-AUTH-001",
+        "title": "CONFIRMED Brute Force Attack",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Credential Access",
+            "technique": "T1110"
+        },
+        "type": "threshold",
+        "event": {
+            "event_type": "authentication",
+            "outcome": "failure",
+            "user": "root",
+            "src_ip": "10.0.0.666",
+            "timestamp": "Jan 15 12:42:55",
+            "details": {
+                "raw_action": "failed"
+            }
+        },
+        "correlation_notes": "5+ failed logins from 10.0.0.666 in 5 minutes"
+    },
+    {
+        "rule_id": "DET-AUTH-001",
+        "title": "CONFIRMED Brute Force Attack",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Credential Access",
+            "technique": "T1110"
+        },
+        "type": "threshold",
+        "event": {
+            "event_type": "authentication",
+            "outcome": "failure",
+            "user": "root",
+            "src_ip": "10.0.0.666",
+            "timestamp": "Jan 15 12:42:55",
+            "details": {
+                "raw_action": "failed"
+            }
+        },
+        "correlation_notes": "5+ failed logins from 10.0.0.666 in 5 minutes"
+    },
+    {
+        "rule_id": "DET-AUTH-001",
+        "title": "CONFIRMED Brute Force Attack",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Credential Access",
+            "technique": "T1110"
+        },
+        "type": "threshold",
+        "event": {
+            "event_type": "authentication",
+            "outcome": "failure",
+            "user": "root",
+            "src_ip": "10.0.0.666",
+            "timestamp": "Jan 15 12:45:03",
+            "details": {
+                "raw_action": "failed"
+            }
+        },
+        "correlation_notes": "5+ failed logins from 10.0.0.666 in 5 minutes"
+    },
+    {
+        "rule_id": "DET-AUTH-001",
+        "title": "CONFIRMED Brute Force Attack",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Credential Access",
+            "technique": "T1110"
+        },
+        "type": "threshold",
+        "event": {
+            "event_type": "authentication",
+            "outcome": "failure",
+            "user": "root",
+            "src_ip": "10.0.0.666",
+            "timestamp": "Jan 15 12:45:04",
+            "details": {
+                "raw_action": "failed"
+            }
+        },
+        "correlation_notes": "5+ failed logins from 10.0.0.666 in 5 minutes"
+    },
+    {
+        "rule_id": "DET-WEB-001",
+        "title": "SQL Injection Detected",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Initial Access",
+            "technique": "T1190"
+        },
+        "type": "stateless",
+        "event": {
+            "event_type": "web_traffic",
+            "outcome": "success",
+            "user": "unknown",
+            "src_ip": "10.0.0.666",
+            "timestamp": "2026-01-15T12:38:26.583799",
+            "details": {
+                "method": "GET",
+                "user_agent": "Mozilla/5.0 (HackerEdition)",
+                "url": "/products?id=1 OR 1=1"
+            }
+        }
+    },
+    {
+        "rule_id": "DET-WEB-001",
+        "title": "SQL Injection Detected",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Initial Access",
+            "technique": "T1190"
+        },
+        "type": "stateless",
+        "event": {
+            "event_type": "web_traffic",
+            "outcome": "success",
+            "user": "unknown",
+            "src_ip": "10.0.0.666",
+            "timestamp": "2026-01-15T12:38:26.786075",
+            "details": {
+                "method": "GET",
+                "user_agent": "Mozilla/5.0 (HackerEdition)",
+                "url": "/products?id=1 UNION SELECT user, password FROM users"
+            }
+        }
+    },
+    {
+        "rule_id": "DET-WEB-001",
+        "title": "SQL Injection Detected",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Initial Access",
+            "technique": "T1190"
+        },
+        "type": "stateless",
+        "event": {
+            "event_type": "web_traffic",
+            "outcome": "success",
+            "user": "unknown",
+            "src_ip": "10.0.0.666",
+            "timestamp": "2026-01-15T12:38:26.987868",
+            "details": {
+                "method": "GET",
+                "user_agent": "Mozilla/5.0 (HackerEdition)",
+                "url": "/products?id=1; DROP TABLE users"
+            }
+        }
+    },
+    {
+        "rule_id": "DET-WEB-001",
+        "title": "SQL Injection Detected",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Initial Access",
+            "technique": "T1190"
+        },
+        "type": "stateless",
+        "event": {
+            "event_type": "web_traffic",
+            "outcome": "success",
+            "user": "unknown",
+            "src_ip": "10.0.0.666",
+            "timestamp": "2026-01-15T12:42:56.207286",
+            "details": {
+                "method": "GET",
+                "user_agent": "Mozilla/5.0 (HackerEdition)",
+                "url": "/products?id=1 OR 1=1"
+            }
+        }
+    },
+    {
+        "rule_id": "DET-WEB-001",
+        "title": "SQL Injection Detected",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Initial Access",
+            "technique": "T1190"
+        },
+        "type": "stateless",
+        "event": {
+            "event_type": "web_traffic",
+            "outcome": "success",
+            "user": "unknown",
+            "src_ip": "10.0.0.666",
+            "timestamp": "2026-01-15T12:42:56.408362",
+            "details": {
+                "method": "GET",
+                "user_agent": "Mozilla/5.0 (HackerEdition)",
+                "url": "/products?id=1 UNION SELECT user, password FROM users"
+            }
+        }
+    },
+    {
+        "rule_id": "DET-WEB-001",
+        "title": "SQL Injection Detected",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Initial Access",
+            "technique": "T1190"
+        },
+        "type": "stateless",
+        "event": {
+            "event_type": "web_traffic",
+            "outcome": "success",
+            "user": "unknown",
+            "src_ip": "10.0.0.666",
+            "timestamp": "2026-01-15T12:42:56.609682",
+            "details": {
+                "method": "GET",
+                "user_agent": "Mozilla/5.0 (HackerEdition)",
+                "url": "/products?id=1; DROP TABLE users"
+            }
+        }
+    },
+    {
+        "rule_id": "DET-WEB-001",
+        "title": "SQL Injection Detected",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Initial Access",
+            "technique": "T1190"
+        },
+        "type": "stateless",
+        "event": {
+            "event_type": "web_traffic",
+            "outcome": "success",
+            "user": "unknown",
+            "src_ip": "10.0.0.666",
+            "timestamp": "2026-01-15T12:45:04.699347",
+            "details": {
+                "method": "GET",
+                "user_agent": "Mozilla/5.0 (HackerEdition)",
+                "url": "/products?id=1 OR 1=1"
+            }
+        }
+    },
+    {
+        "rule_id": "DET-WEB-001",
+        "title": "SQL Injection Detected",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Initial Access",
+            "technique": "T1190"
+        },
+        "type": "stateless",
+        "event": {
+            "event_type": "web_traffic",
+            "outcome": "success",
+            "user": "unknown",
+            "src_ip": "10.0.0.666",
+            "timestamp": "2026-01-15T12:45:04.900284",
+            "details": {
+                "method": "GET",
+                "user_agent": "Mozilla/5.0 (HackerEdition)",
+                "url": "/products?id=1 UNION SELECT user, password FROM users"
+            }
+        }
+    },
+    {
+        "rule_id": "DET-WEB-001",
+        "title": "SQL Injection Detected",
+        "severity": "HIGH",
+        "mitre": {
+            "tactic": "Initial Access",
+            "technique": "T1190"
+        },
+        "type": "stateless",
+        "event": {
+            "event_type": "web_traffic",
+            "outcome": "success",
+            "user": "unknown",
+            "src_ip": "10.0.0.666",
+            "timestamp": "2026-01-15T12:45:05.102459",
+            "details": {
+                "method": "GET",
+                "user_agent": "Mozilla/5.0 (HackerEdition)",
+                "url": "/products?id=1; DROP TABLE users"
+            }
+        }
+    }
+]

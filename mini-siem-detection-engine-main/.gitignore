@@ -1,0 +1,7 @@
+logs/
+__pycache__/
+*.log
+.env
+venv/
+soc.db
+.venv/

@@ -1,0 +1,13 @@
+title: SQL Injection Detected
+id: DET-WEB-001
+severity: HIGH
+mitre:
+  tactic: Initial Access
+  technique: T1190
+type: stateless
+condition:
+  field: details.url
+  pattern: "(union select|OR 1=1|drop table|--)"
+false_positives:
+  - field: details.url
+    pattern: "test_sql_param" # Example whitelist
